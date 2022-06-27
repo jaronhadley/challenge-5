@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,10 +29,91 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="time-block row">
+        <div class="col-1 hour"> <!--9 AM-->
+          9 AM
+        </div>
+        <div id="9a" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div class="time-block row"><!--10 AM-->
+        <div class="col-1 hour">
+          10 AM
+        </div>
+        <div id="10a" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div class="time-block row"> <!--11 AM-->
+        <div class="col-1 hour">
+          11 AM
+        </div>
+        <div id="11a" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="12p" class="time-block row"> <!--12 PM-->
+        <div class="col-1 hour">
+          12 PM
+        </div>
+        <div id="12p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="1p" class="time-block row"> <!--1 PM-->
+        <div class="col-1 hour">
+          1 PM
+        </div>
+        <div id="1p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="2p" class="time-block row"> <!--2 PM-->
+        <div class="col-1 hour">
+          2 PM
+        </div>
+        <div id="2p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="3p" class="time-block row"> <!--3 PM-->
+        <div class="col-1 hour">
+          3 PM
+        </div>
+        <div id="3p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="4p" class="time-block row"> <!--4 PM-->
+        <div class="col-1 hour">
+          4 PM
+        </div>
+        <div id="4p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+      <div id="5p" class="time-block row"> <!--5 PM-->
+        <div class="col-1 hour">
+          5 PM
+        </div>
+        <div id="5p" class="col-10 description" contenteditable="true"></div>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
