@@ -37,6 +37,19 @@ function renderBlocks (){
 }
 
 // render saved events from local storage
+function renderEvents (){
+    times.forEach(hour =>{
+        hour.text(localStorage.getItem(hour.data("storagename")));
+    })
+}
+// save new events to local storage variables
+function saveNewEvents (event) {
+    var description = $("#"+$(event.target).data("storagename"));
+    localStorage.setItem(description.data("storagename"),description.text());
+    renderEvents(); // render the events again with updates
+}
+
 renderBlocks();
-addEvents();
+renderEvents();
 setInterval(renderBlocks,60000);
+saveBtn.on("click",saveNewEvents);
